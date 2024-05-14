@@ -1,0 +1,227 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body {
+    position: relative;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    /* background-color: #fcfbf9; */
+    background-image: url(../Images/download.jpeg);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.container {
+    width: 80%;
+    margin: auto;
+}
+header {
+    position: absolute;
+    width: 100%;
+    height: 70px;
+    top: 0;
+    z-index: 10;
+    background-color: rgba(251, 243, 232, 0.629);
+    padding: 10px 0;
+    position: fixed;
+}
+.header-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-content  .brand {
+    font-size: 32px;
+    text-decoration: none;
+    color: maroon;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
+.search-input{
+    background-color: rgba(251, 243, 232, 0.814);
+    border: 2px rgb(251, 243, 232) solid ;
+    border-radius: 5px;
+    margin: 5px;
+    width:300px ;
+    height: 40px;
+    outline: none;
+}
+nav ul {
+    display: flex;
+    list-style: none;
+}
+nav  li a {
+    display: block;
+    color: maroon;
+    min-width: 80px;
+    padding: 5px;
+    margin: 0px 5px;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+/* form */
+
+
+.section-form {
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,50%);
+    width: 50%;
+    text-align: center;
+    background-color: rgb(255, 241, 224);
+    padding: 20px;
+    border: 5px rgb(255, 241, 224) solid;
+    border-radius: 5px;
+}
+.section-form  h2 {
+    font-size: 50px;
+    letter-spacing: 2px;
+    color:maroon;
+}
+.section-form  form input {
+    display: block;
+    width:100%;
+    margin: 5px 0;
+    height: 30px;
+    border: 1px  solid rgb(233, 209, 180);
+    padding: 5px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    outline: none;
+}
+
+.section-form form  input[type="submit"] {
+    font-size: 25px;
+    text-transform: uppercase;
+    height: auto;
+    cursor: pointer;
+    background-color: rgb(255, 210, 156);
+    color: maroon;
+}
+.section-form form  input[type="submit"]:hover {
+    opacity: .6;
+}
+
+nav  ul#user_info {
+    display: none;
+}
+
+
+/* Home  */
+
+
+.products {
+    position: absolute;
+    top: 80px;
+    width: 50%;
+    margin: 10px 15%;
+}
+.product_item {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color: rgba(251, 243, 232, 0.629);
+    border: 1px solid rgb(233, 209, 180);
+    border-radius: 15px;
+    min-height: 150px;
+    margin-bottom: 10px;
+}
+.product_item_img {
+    width: 25%;
+    margin-right:10px ;
+    border-radius: 15px;
+
+}
+.product_item_action  {
+    flex:1;
+    text-align: right;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.product_item .add_to_cart {
+    display: block;
+    width: 100px;
+    margin-top:auto;
+    margin-left: auto;
+    background-color: maroon;
+    color: #fff;
+    border: 0;
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.product_item .add_to_fav {
+    display: block;
+    width: 20px;
+    margin: 5px;
+    background-color: #00000000;
+    color: #fff;
+    border: 0;
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+.product_item .add_to_fav:hover{
+    color: red;
+}
+
+
+nav ul#user_info li i {
+    color: #fff;
+    font-size: 25px;
+    cursor: pointer;
+}
+nav ul#user_info li{
+    margin: 0px 10px;
+    position: relative;
+}
+nav ul#user_info li .badge, .badge-fav {
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    background-color: red;
+    color: #fff;
+    text-align: center;
+    display: block;
+    border-radius: 50%;
+    top:-10px;
+    right:-10px;
+    font-size: 13px;
+    display: none;
+}
+
+
+
+.carts_products {
+    position: absolute;
+    width:250px;
+    height: auto;
+    transform: translate(-40px,0);
+    background-color: rgb(255, 247, 236);
+    top: 56px;
+    padding: 10px;
+    border: 1px solid rgb(250, 214, 170);
+    display: none;
+}
+.carts_products a {
+   display: block;
+   color: #000;
+   margin: 4px 0;
+   padding: 0;
+   background-color: maroon;
+   color: #fff;
+   text-align: center;
+   text-decoration: none;
+}
